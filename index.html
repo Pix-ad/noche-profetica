@@ -304,7 +304,7 @@ const qty    = { general: 0, infantil: 0 };
 let savedData = [];
 
 function fmt(n)  { return '$' + n.toLocaleString('es-AR'); }
-function uid() { const c='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'; let r=''; for(let i=0;i<8;i++) r+=c[Math.floor(Math.random()*c.length)]; return r; }
+function uid() { const c='abcdefghijklmnopqrstuvwxyz0123456789'; let r=''; for(let i=0;i<8;i++) r+=c[Math.floor(Math.random()*c.length)]; return r; }
 function today() { return new Date().toLocaleDateString('es-AR'); }
 
 function change(type, d) {
